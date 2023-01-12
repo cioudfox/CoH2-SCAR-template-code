@@ -1,6 +1,5 @@
 function OnInitID()
-
-	-- [[ Markers ]]
+    -- [[ Markers ]]
     -- [[ USE WORLDBUILDER PRESET NAMES.
         Tip:
             - Save everything in a separate file
@@ -21,7 +20,7 @@ function OnInitID()
     mkr_4 = Marker_FromName("mkr_4","Enemy Spawn")
 
 	-- [[ Squad Groups ]]
-
+	
 	-- [[ Entity Groups ]]
 
 end
@@ -37,19 +36,22 @@ end
         - In general, all commander abilities are possible, and avoid using
         - quick interval for long abilities such as Railway artillery as 
         - your game will become a Microsoft powerpoint slideshow within a minute
-]]
+   ]]
+   
 function OnInit()
 	t_players = {}
+	
 	--Time in seconds till first strike. In case it gets stuck in circular loop doing nothing, USE interval
-    --This preset will start it at 1 minute and send a wave of barrages every 2 or 3 seconds
+        --This preset will start it at 1 minute and send a wave of barrages every 2 or 3 seconds
 	g_offmap_interval_first_min = 60
 	g_offmap_interval_first_max = 61
+	
 	--Time in seconds to each strike after that
 	g_offmap_interval_min = 2
 	g_offmap_interval_max = 3
 
 	--Give each faction your designated ability that you want spammed
-    --Stukas make the whistle sound when they land for maximum fun and rage
+        --Stukas make the whistle sound when they land for maximum fun and rage
 
 	g_aef_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
 
@@ -63,9 +65,10 @@ function OnInit()
 
     --Give all players the ability. You can also just pick one guy,
     --but that would mean reduced damage to your teammates, so to be fair everyone gets the ability
-	for i=1,World_GetPlayerCount() do	
-		local player = World_GetPlayerAt(i)
-		table.insert (t_players, player)
+    
+    for i=1,World_GetPlayerCount() do	
+	local player = World_GetPlayerAt(i)
+	table.insert (t_players, player)
 		if Player_GetRaceName(player) == "german" then
 			Player_AddAbility(t_players[i], g_german_ability)
 		elseif Player_GetRaceName(player) == "west_german" then
@@ -80,7 +83,7 @@ function OnInit()
 	end
 
     --Create the time rule and call the cast command to get started!
-	Rule_AddInterval(RNG_Cast, World_GetRand(g_offmap_interval_first_min, g_offmap_interval_first_max))
+    Rule_AddInterval(RNG_Cast, World_GetRand(g_offmap_interval_first_min, g_offmap_interval_first_max))
 
 end
 
@@ -379,7 +382,7 @@ end
 
 
 --Function Calls
-Scar_AddInit(CustomStartingResources_Init)
+--Scar_AddInit(CustomStartingResources_Init)
 Scar_AddInit(OnInit)
 
 
