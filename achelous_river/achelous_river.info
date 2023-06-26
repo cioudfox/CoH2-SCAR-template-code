@@ -1,0 +1,213 @@
+HeaderInfo =  
+{
+	scenarioname = "Achelous River Stuka Edition",
+	scenariodescription = "Welcome to Achelous River Stuka Edition. You thought arti was bad? Wait till you see this. Turn your volume down and glhf! :   ^)",
+	maxplayers = 6,
+	scenario_battlefront = 2,
+	scenarioabbrname = "",
+	savedname = "",
+	version = 2008,
+	mapsize =  
+	{
+		384,
+		384,
+	},
+	music = "",
+	point_positions =  
+	{
+		 
+		{
+			y = -132.29703,
+			x = -93.83366,
+			owner_id = 1004,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -131.45090,
+			x = -139.66589,
+			owner_id = 1003,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 127.22144,
+			x = 136.14079,
+			owner_id = 1000,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 131.84299,
+			x = 81.98613,
+			owner_id = 1001,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -90.03821,
+			x = -127.71908,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 130.73837,
+			x = -130.26518,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = -123.45884,
+			x = 123.56043,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = 88.92320,
+			x = 133.75554,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -30.32709,
+			x = -29.45396,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -100.54067,
+			x = 51.07201,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 95.34659,
+			x = -110.23561,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -125,
+			x = -48,
+			owner_id = 1005,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 125.81389,
+			x = 33.74895,
+			owner_id = 1002,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -97.26963,
+			x = 3.65583,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -140.32887,
+			x = 30.74990,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -81.60271,
+			x = 133.14148,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 91.86829,
+			x = -9.46448,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -23.53465,
+			x = -106.21630,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = 1.08599,
+			x = 3.16883,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = 89.03848,
+			x = -69.09409,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 27.99274,
+			x = 126.83447,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = -11.27492,
+			x = 106.86229,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = 16.92935,
+			x = -110.47452,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = 29.22416,
+			x = 29.16846,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 31.24671,
+			x = -30.22367,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -39.11826,
+			x = 23.99425,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 144.07826,
+			x = -51.96865,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+	},
+	default_skins =  
+	{
+		"",
+	},
+}
+

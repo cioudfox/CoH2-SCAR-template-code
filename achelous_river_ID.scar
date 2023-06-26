@@ -1,0 +1,553 @@
+function OnInitID()
+
+	-- [[ Markers ]]
+	mkr_1 = Marker_FromName("mkr_1","Enemy Spawn")
+	mkr_10 = Marker_FromName("mkr_10","Enemy Spawn")
+	mkr_11 = Marker_FromName("mkr_11","Enemy Spawn")
+	mkr_12 = Marker_FromName("mkr_12","Enemy Spawn")
+	mkr_13 = Marker_FromName("mkr_13","Enemy Spawn")
+	mkr_14 = Marker_FromName("mkr_14","Enemy Spawn")
+	mkr_15 = Marker_FromName("mkr_15","Enemy Spawn")
+	mkr_16 = Marker_FromName("mkr_16","Enemy Spawn")
+	mkr_17 = Marker_FromName("mkr_17","Enemy Spawn")
+	mkr_18 = Marker_FromName("mkr_18","Enemy Spawn")
+	mkr_19 = Marker_FromName("mkr_19","Enemy Spawn")
+	mkr_2 = Marker_FromName("mkr_2","Enemy Spawn")
+	mkr_20 = Marker_FromName("mkr_20","Enemy Spawn")
+	mkr_21 = Marker_FromName("mkr_21","Enemy Spawn")
+	mkr_22 = Marker_FromName("mkr_22","Enemy Spawn")
+	mkr_23 = Marker_FromName("mkr_23","Enemy Spawn")
+	mkr_24 = Marker_FromName("mkr_24","Enemy Spawn")
+	mkr_25 = Marker_FromName("mkr_25","Enemy Spawn")
+	mkr_26 = Marker_FromName("mkr_26","Enemy Spawn")
+	mkr_27 = Marker_FromName("mkr_27","Enemy Spawn")
+	mkr_28 = Marker_FromName("mkr_28","Enemy Spawn")
+	mkr_29 = Marker_FromName("mkr_29","Enemy Spawn")
+	mkr_3 = Marker_FromName("mkr_3","Enemy Spawn")
+	mkr_30 = Marker_FromName("mkr_30","Enemy Spawn")
+	mkr_31 = Marker_FromName("mkr_31","Enemy Spawn")
+	mkr_32 = Marker_FromName("mkr_32","Enemy Spawn")
+	mkr_33 = Marker_FromName("mkr_33","Enemy Spawn")
+	mkr_34 = Marker_FromName("mkr_34","Enemy Spawn")
+	mkr_35 = Marker_FromName("mkr_35","Enemy Spawn")
+	mkr_36 = Marker_FromName("mkr_36","Enemy Spawn")
+	mkr_37 = Marker_FromName("mkr_37","Enemy Spawn")
+	mkr_38 = Marker_FromName("mkr_38","Enemy Spawn")
+	mkr_39 = Marker_FromName("mkr_39","Enemy Spawn")
+	mkr_4 = Marker_FromName("mkr_4","Enemy Spawn")
+	mkr_40 = Marker_FromName("mkr_40","Enemy Spawn")
+	mkr_41 = Marker_FromName("mkr_41","Enemy Spawn")
+	mkr_42 = Marker_FromName("mkr_42","Enemy Spawn")
+	mkr_43 = Marker_FromName("mkr_43","Enemy Spawn")
+	mkr_44 = Marker_FromName("mkr_44","Enemy Spawn")
+	mkr_45 = Marker_FromName("mkr_45","Enemy Spawn")
+	mkr_47 = Marker_FromName("mkr_47","Enemy Spawn")
+	mkr_48 = Marker_FromName("mkr_48","Enemy Spawn")
+	mkr_49 = Marker_FromName("mkr_49","Enemy Spawn")
+	mkr_5 = Marker_FromName("mkr_5","Enemy Spawn")
+	mkr_50 = Marker_FromName("mkr_50","Enemy Spawn")
+	mkr_51 = Marker_FromName("mkr_51","Enemy Spawn")
+	mkr_52 = Marker_FromName("mkr_52","Enemy Spawn")
+	mkr_53 = Marker_FromName("mkr_53","Enemy Spawn")
+	mkr_54 = Marker_FromName("mkr_54","Enemy Spawn")
+	mkr_55 = Marker_FromName("mkr_55","Enemy Spawn")
+	mkr_56 = Marker_FromName("mkr_56","Enemy Spawn")
+	mkr_57 = Marker_FromName("mkr_57","Enemy Spawn")
+	mkr_58 = Marker_FromName("mkr_58","Enemy Spawn")
+	mkr_59 = Marker_FromName("mkr_59","Enemy Spawn")
+	mkr_6 = Marker_FromName("mkr_6","Enemy Spawn")
+	mkr_60 = Marker_FromName("mkr_60","Enemy Spawn")
+	mkr_61 = Marker_FromName("mkr_61","Enemy Spawn")
+	mkr_62 = Marker_FromName("mkr_62","Enemy Spawn")
+	mkr_63 = Marker_FromName("mkr_63","Enemy Spawn")
+	mkr_64 = Marker_FromName("mkr_64","Enemy Spawn")
+	mkr_65 = Marker_FromName("mkr_65","Enemy Spawn")
+	mkr_66 = Marker_FromName("mkr_66","Enemy Spawn")
+	mkr_67 = Marker_FromName("mkr_67","Enemy Spawn")
+	mkr_68 = Marker_FromName("mkr_68","Enemy Spawn")
+	mkr_69 = Marker_FromName("mkr_69","Enemy Spawn")
+	mkr_7 = Marker_FromName("mkr_7","Enemy Spawn")
+	mkr_70 = Marker_FromName("mkr_70","Enemy Spawn")
+	mkr_71 = Marker_FromName("mkr_71","Enemy Spawn")
+	mkr_72 = Marker_FromName("mkr_72","Enemy Spawn")
+	mkr_73 = Marker_FromName("mkr_73","Enemy Spawn")
+	mkr_74 = Marker_FromName("mkr_74","Enemy Spawn")
+	mkr_75 = Marker_FromName("mkr_75","Enemy Spawn")
+	mkr_76 = Marker_FromName("mkr_76","Enemy Spawn")
+	mkr_77 = Marker_FromName("mkr_77","Enemy Spawn")
+	mkr_78 = Marker_FromName("mkr_78","Enemy Spawn")
+	mkr_79 = Marker_FromName("mkr_79","Enemy Spawn")
+	mkr_8 = Marker_FromName("mkr_8","Enemy Spawn")
+	mkr_80 = Marker_FromName("mkr_80","Enemy Spawn")
+	mkr_81 = Marker_FromName("mkr_81","Enemy Spawn")
+	mkr_82 = Marker_FromName("mkr_82","Enemy Spawn")
+	mkr_83 = Marker_FromName("mkr_83","Enemy Spawn")
+	mkr_84 = Marker_FromName("mkr_84","Enemy Spawn")
+	mkr_85 = Marker_FromName("mkr_85","Enemy Spawn")
+	mkr_86 = Marker_FromName("mkr_86","Enemy Spawn")
+	mkr_87 = Marker_FromName("mkr_87","Enemy Spawn")
+	mkr_88 = Marker_FromName("mkr_88","Enemy Spawn")
+	mkr_89 = Marker_FromName("mkr_89","Enemy Spawn")
+	mkr_9 = Marker_FromName("mkr_9","Enemy Spawn")
+	mkr_90 = Marker_FromName("mkr_90","Enemy Spawn")
+	mkr_91 = Marker_FromName("mkr_91","Enemy Spawn")
+
+	-- [[ Squad Groups ]]
+
+	-- [[ Entity Groups ]]
+
+end
+
+function OnInit()
+	t_players = {}
+	--Time in seconds to first
+	g_offmap_interval_first_min = 60
+	g_offmap_interval_first_max = 61
+	--Time in seconds to the following strikes after first
+	g_offmap_interval_min = 2
+	g_offmap_interval_max = 3
+	--Give each race a ability. 
+
+	g_aef_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
+
+	g_british_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
+
+	g_west_german_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
+
+	g_german_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
+
+	g_soviet_ability = ABILITY.GERMAN.STUKA_BOMBING_STRIKE
+
+	for i=1,World_GetPlayerCount() do	
+		local player = World_GetPlayerAt(i)
+		table.insert (t_players, player)
+		if Player_GetRaceName(player) == "german" then
+			Player_AddAbility(t_players[i], g_german_ability)
+		elseif Player_GetRaceName(player) == "west_german" then
+			Player_AddAbility(t_players[i], g_west_german_ability)
+		elseif Player_GetRaceName(player) == "soviet" then
+			Player_AddAbility(t_players[i], g_soviet_ability)
+		elseif Player_GetRaceName(player) == "aef" then
+			Player_AddAbility(t_players[i], g_aef_ability)
+		elseif Player_GetRaceName(player) == "british" then
+			Player_AddAbility(t_players[i], g_british_ability)
+		end
+	end
+
+	Rule_AddInterval(RES_Cast, World_GetRand(g_offmap_interval_first_min, g_offmap_interval_first_max))
+
+end
+
+--Cast offmap-----------------------------------
+function RES_Cast ()
+	--Exampel markers, replace them whit YOUR MARKERS!!!
+	local markers_Cast =
+		{
+		mkr_1,
+		mkr_10,
+		mkr_11,
+		mkr_12,
+		mkr_13,
+		mkr_14,
+		mkr_15,
+		mkr_16,
+		mkr_17,
+		mkr_18, 
+		mkr_19, 
+		mkr_2,
+		mkr_20, 
+		mkr_21, 
+		mkr_22, 
+		mkr_23,
+		mkr_24,
+		mkr_25,
+		mkr_26,
+		mkr_27,
+		mkr_28,
+		mkr_29,
+		mkr_3,
+		mkr_30,
+		mkr_31,
+		mkr_32,
+		mkr_33,
+		mkr_34,
+		mkr_35,
+		mkr_36,
+		mkr_37,
+		mkr_38,
+		mkr_39,
+		mkr_4,
+		mkr_40,
+		mkr_41,
+		mkr_42,
+		mkr_43,
+		mkr_44,
+		mkr_45,
+		mkr_47,
+		mkr_48,
+		mkr_49,
+		mkr_5,
+		mkr_50, 
+		mkr_51,
+		mkr_52,
+		mkr_53,
+		mkr_54,
+		mkr_55,
+		mkr_56,
+		mkr_57,
+		mkr_58,
+		mkr_59,
+		mkr_6,
+		mkr_60,
+		mkr_61,
+		mkr_62,
+		mkr_63,
+		mkr_64,
+		mkr_65,
+		mkr_66,
+		mkr_67,
+		mkr_68,
+		mkr_69,
+		mkr_7,
+		mkr_70,
+		mkr_71,
+		mkr_72,
+		mkr_73,
+		mkr_74,
+		mkr_75,
+		mkr_76,
+		mkr_77,
+		mkr_78,
+		mkr_79,
+		mkr_8,
+		mkr_80,
+		mkr_81,
+		mkr_82,
+		mkr_83,
+		mkr_84,
+		mkr_85,
+		mkr_86,
+		mkr_87,
+		mkr_88,
+		mkr_89,
+		mkr_9,
+		mkr_90,
+		mkr_91,
+	}
+
+	local target_R = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+	local target_R2 = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+	local target_R3 = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+	local target_R4 = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+	local target_R5 = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+	local target_R6 = Util_GetRandomPosition(Table_GetRandomItem(markers_Cast))
+
+	local target_Player = t_players[World_GetRand(1, World_GetPlayerCount())]
+	if Player_GetRaceName(target_Player) == "german" then
+		Cmd_Ability(target_Player, g_german_ability,target_R, nil, true)
+		Cmd_Ability(target_Player, g_german_ability,target_R2, nil, true)
+		Cmd_Ability(target_Player, g_german_ability,target_R3, nil, true)
+		Cmd_Ability(target_Player, g_german_ability,target_R4, nil, true)
+		Cmd_Ability(target_Player, g_german_ability,target_R5, nil, true)
+		Cmd_Ability(target_Player, g_german_ability,target_R6, nil, true)
+	elseif Player_GetRaceName(target_Player) == "west_german" then
+		Cmd_Ability(target_Player, g_west_german_ability,target_R, nil, true)
+		Cmd_Ability(target_Player, g_west_german_ability,target_R2, nil, true)
+		Cmd_Ability(target_Player, g_west_german_ability,target_R3, nil, true)
+		Cmd_Ability(target_Player, g_west_german_ability,target_R4, nil, true)
+		Cmd_Ability(target_Player, g_west_german_ability,target_R5, nil, true)
+		Cmd_Ability(target_Player, g_west_german_ability,target_R6, nil, true)
+	elseif Player_GetRaceName(target_Player) == "soviet" then
+		Cmd_Ability(target_Player, g_soviet_ability,target_R, nil, true)
+		Cmd_Ability(target_Player, g_soviet_ability,target_R2, nil, true)
+		Cmd_Ability(target_Player, g_soviet_ability,target_R3, nil, true)
+		Cmd_Ability(target_Player, g_soviet_ability,target_R4, nil, true)
+		Cmd_Ability(target_Player, g_soviet_ability,target_R5, nil, true)
+		Cmd_Ability(target_Player, g_soviet_ability,target_R6, nil, true)
+	elseif Player_GetRaceName(target_Player) == "aef" then
+		Cmd_Ability(target_Player, g_aef_ability,target_R, nil, true)
+		Cmd_Ability(target_Player, g_aef_ability,target_R2, nil, true)
+		Cmd_Ability(target_Player, g_aef_ability,target_R3, nil, true)
+		Cmd_Ability(target_Player, g_aef_ability,target_R4, nil, true)
+		Cmd_Ability(target_Player, g_aef_ability,target_R5, nil, true)
+		Cmd_Ability(target_Player, g_aef_ability,target_R6, nil, true)
+	elseif Player_GetRaceName(target_Player) == "british" then
+		Cmd_Ability(target_Player, g_british_ability,target_R, nil, true)
+		Cmd_Ability(target_Player, g_british_ability,target_R2, nil, true)
+		Cmd_Ability(target_Player, g_british_ability,target_R3, nil, true)
+		Cmd_Ability(target_Player, g_british_ability,target_R4, nil, true)
+		Cmd_Ability(target_Player, g_british_ability,target_R5, nil, true)
+		Cmd_Ability(target_Player, g_british_ability,target_R6, nil, true)
+	end
+
+	Rule_ChangeInterval(RES_Cast, World_GetRand(g_offmap_interval_min, g_offmap_interval_max))
+
+end
+
+function CustomStartingResources_Init()
+	--[[
+	CustomStartingResource System created by Janne252. Visit COH2.ORG for more. Please do not remove this note.
+	
+	Some information about income_modifier table and how to use it:
+		- All resource income modifiers affect the # per minute value.
+		- By default all resource income modifiers are set to 1 (value = 1, math_type = MUT_Multiplication). As you know, anything * 1 is the same value.
+		- MUT_Multiplication multiplies the income rate and MUT_Addition adds to it. Here are some examples of that:
+			- Let's say manpower income is 294 manpower per minute. With value = 10, math_type = MUT_Multiplication we will get 2940 manpower per minute,
+			since 294 * 10 = 2940.
+			Let's say manpower income is still 294 manpower per minute. With value = 10, math_type = MUT_Addition, we will get 304 manpower per minute, 
+			since 294 + 10 = 304.
+			
+		- How to add 50 extra munition income? 
+			{type = RT_Munition, value = 50, math_type = MUT_Addition}
+		
+		- How to remove 100 from manpower income?
+			{type = RT_Manpower, value = -100, math_type = MUT_Addition}
+			
+		- How to double manpower income?
+			{type = RT_Manpower, value = 2, math_type = MUT_Multiplication}
+	]]
+	
+	local ResourceSets = {
+		standard = {
+			--german:
+			[0] = {
+				manpower = 490,
+				fuel = 20,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--soviet:
+			[1] = {
+				manpower = 490,
+				fuel = 50,
+				munition = 0,
+				action = 0,
+				command = 1,
+
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 240,
+				fuel = 40,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--us forces:
+			[3] = {
+				manpower = 400,
+				fuel = 15,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--british forces:
+			[4] = {
+				manpower = 400,
+				fuel = 15,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			income_modifier = {
+				{type = RT_Manpower, value = 1, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Munition, value = 1, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Fuel, value = 1, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+			},
+		},
+		highResources = {
+			--german:
+			[0] = {
+				manpower = 1390,
+				fuel = 50,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--soviet:
+			[1] = {
+				manpower = 1390,
+				fuel = 80,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 1140,
+				fuel = 70,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--us forces:
+			[3] = {
+				manpower = 1300,
+				fuel = 45,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--british forces:
+			[4] = {
+				manpower = 1300,
+				fuel = 45,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			income_modifier = {
+				{type = RT_Manpower, value = 1, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Munition, value = 1, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Fuel, value = 1, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+			},
+		},
+		customSet_01 = {
+			--german:
+			[0] = {
+				manpower = 4000,
+				fuel = 300,
+				munition = 500,
+				action = 0,
+				command = 12,
+			},
+			--soviet:
+			[1] = {
+				manpower = 4000,
+				fuel = 300,
+				munition = 500,
+				action = 0,
+				command = 12,
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 4000,
+				fuel = 300,
+				munition = 500,
+				action = 0,
+				command = 12,
+			},
+			--us forces:
+			[3] = {
+				manpower = 4000,
+				fuel = 300,
+				munition = 500,
+				action = 0,
+				command = 12,
+			},
+			--british forces:
+			[4] = {
+				manpower = 4000,
+				fuel = 300,
+				munition = 500,
+				action = 0,
+				command = 12,
+			},
+		income_modifier = {
+			{type = RT_Manpower, value = 2, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Munition, value = 3, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Fuel, value = 3, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+		},
+		},
+		customSet_02 = {
+				--german:
+			[0] = {
+				manpower = 0,
+				fuel = 0,
+				munition = 0,
+				action = 0,
+				command = 0,
+			},
+			--soviet:
+			[1] = {
+				manpower = 0,
+				fuel = 0,
+				munition = 0,
+				action = 0,
+				command = 0,
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 0,
+				fuel = 0,
+				munition = 0,
+				action = 0,
+				command = 0,
+			},
+			--us forces:
+			[3] = {
+				manpower = 0,
+				fuel = 0,
+				munition = 0,
+				action = 0,
+				command = 0,
+			},
+			--british forces:
+			[4] = {
+				manpower = 0,
+				fuel = 0,
+				munition = 0,
+				action = 0,
+				command = 0,
+			},
+			income_modifier = {
+				{type = RT_Manpower, value = 1, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Munition, value = 1, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Fuel, value = 1, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+			},
+		}, 
+	}
+	--This will set the resource set to use in-game
+	local g_ResourceSet = ResourceSets.customSet_01
+	
+	local Player_ApplyResourceSet = function(player, resourceSet)
+		Player_SetResource(player, RT_Manpower, resourceSet.manpower)
+		Player_SetResource(player, RT_Fuel, resourceSet.fuel)
+		Player_SetResource(player, RT_Munition, resourceSet.munition)
+		Player_SetResource(player, RT_Action, resourceSet.action)
+		Player_SetResource(player, RT_Command, resourceSet.command)	
+	end
+	--Population cap override value
+	g_popCapOverride = 300
+	
+	for i = 1, World_GetPlayerCount() do
+		local player = World_GetPlayerAt(i)
+		local resource_set = g_ResourceSet[Player_GetRaceIndex(player)]
+		Player_ApplyResourceSet(player, resource_set)
+		Player_SetPopCapOverride(player, g_popCapOverride)
+		for key, resource in ipairs(g_ResourceSet.income_modifier) do
+			local _value = resource.value
+			if resource.math_type == MUT_Addition then
+				_value = _value / (60 * 8)
+			end
+			Modify_PlayerResourceRate(player, resource.type, _value, resource.math_type)
+		end
+	end
+end
+
+function Player_GetRaceIndex(player)
+	local racename = Player_GetRaceName(player)
+	if racename == "german" then
+		return 0
+	elseif racename == "soviet" then
+		return 1
+	elseif racename == "west_german" then
+		return 2
+	elseif racename == "aef" then
+		return 3
+	elseif racename == "british" then
+		return 4
+	else
+		return 0
+	end
+end
+
+Scar_AddInit(CustomStartingResources_Init)
+Scar_AddInit(OnInit)
+
+
