@@ -1,0 +1,304 @@
+HeaderInfo =  
+{
+	scenarioname = "Team Fortress 2: The Heavy Update",
+	scenariodescription = "Hey guys, did you know that in terms of human companionship, Flareon is objectively the most huggable Pokemon? While their maximum temperature is likely too much for most, they are capable of controlling it, so they can set themselves to the perfect temperature for you. Along with that, they have a lot of fluff, making them undeniably incredibly soft to touch. But that's not all, they have a very respectable special defense stat of 110, which means that they are likely very calm and resistant to emotional damage. Because of this, if you have a bad day, you can vent to it while hugging it, and it won't mind. It can make itself even more endearing with moves like Charm and Baby Doll Eyes, ensuring that you never have a prolonged bout of depression ever again.",
+	maxplayers = 8,
+	scenario_battlefront = 0,
+	scenarioabbrname = "UwU",
+	savedname = "",
+	version = 2008,
+	mapsize =  
+	{
+		640,
+		640,
+	},
+	music = "",
+	point_positions =  
+	{
+		 
+		{
+			y = -148.17316,
+			x = -138.89586,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = -204.20670,
+			x = -146.87309,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = -210.94797,
+			x = -237.06647,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = -22.39614,
+			x = 268.77777,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = 90.39735,
+			x = 165.30238,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+		 
+		{
+			y = -204.95311,
+			x = 156.15714,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = -162.90724,
+			x = 252.74460,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = -260.98279,
+			x = 220.70111,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = 213.68210,
+			x = -187.00917,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = 23.85616,
+			x = -234.45003,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = 42.02216,
+			x = -2.64102,
+			owner_id = 0,
+			ebp_name = "territory_munitions_point_mp",
+		},
+		 
+		{
+			y = -255.54175,
+			x = -197.36581,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = -199.15582,
+			x = -64.60791,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = 23.09155,
+			x = 186.97508,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = -197.98166,
+			x = 80.18947,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = 137.54668,
+			x = -53.24240,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = 121.10851,
+			x = 50.68708,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = -45.40263,
+			x = 87.59556,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = -52.37331,
+			x = -65.63810,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = 266.96317,
+			x = 267.05151,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -105.19135,
+			x = 257.00101,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = -284.49738,
+			x = -130.24837,
+			owner_id = 1000,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -282.33029,
+			x = -41.78010,
+			owner_id = 1001,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -283.04291,
+			x = 100.77573,
+			owner_id = 1003,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -281.75793,
+			x = 15.67586,
+			owner_id = 1002,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 272.96240,
+			x = -143.38435,
+			owner_id = 1004,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 272.14249,
+			x = -55.17706,
+			owner_id = 1005,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 271.09067,
+			x = 46.13647,
+			owner_id = 1006,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = -93.69522,
+			x = -263.97961,
+			owner_id = 0,
+			ebp_name = "watchtower",
+		},
+		 
+		{
+			y = -146.25008,
+			x = -12.84731,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = 44.52943,
+			x = -118.96030,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = 34.12979,
+			x = 80.45608,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = -139.97464,
+			x = 151.30579,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -224.52536,
+			x = 192.55232,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = 152.79694,
+			x = 269.88974,
+			owner_id = 0,
+			ebp_name = "territory_point_mp",
+		},
+		 
+		{
+			y = -23.40880,
+			x = -151.78023,
+			owner_id = 0,
+			ebp_name = "watchtower",
+		},
+		 
+		{
+			y = 271.01941,
+			x = 125.89262,
+			owner_id = 1007,
+			ebp_name = "starting_position_shared_territory",
+		},
+		 
+		{
+			y = 154.16341,
+			x = -256.03665,
+			owner_id = 0,
+			ebp_name = "territory_point",
+		},
+		 
+		{
+			y = -127.37625,
+			x = -226.80489,
+			owner_id = 0,
+			ebp_name = "victory_point",
+		},
+		 
+		{
+			y = 222.95619,
+			x = 194.40242,
+			owner_id = 0,
+			ebp_name = "territory_fuel_point_mp",
+		},
+	},
+	default_skins =  
+	{
+		"",
+	},
+}
+

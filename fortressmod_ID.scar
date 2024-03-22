@@ -1,0 +1,32 @@
+function OnInitID()
+
+	-- [[ Markers ]]
+	arty1 = Marker_FromName("arty1","Ally Spawn")
+	arty10 = Marker_FromName("arty10","Ally Spawn")
+	arty11 = Marker_FromName("arty11","Ally Spawn")
+	arty12 = Marker_FromName("arty12","Ally Spawn")
+	arty13 = Marker_FromName("arty13","Ally Spawn")
+	arty14 = Marker_FromName("arty14","Ally Spawn")
+	arty2 = Marker_FromName("arty2","Ally Spawn")
+	arty3 = Marker_FromName("arty3","Ally Spawn")
+	arty4 = Marker_FromName("arty4","Ally Spawn")
+	arty5 = Marker_FromName("arty5","Ally Spawn")
+	arty6 = Marker_FromName("arty6","Ally Spawn")
+	arty7 = Marker_FromName("arty7","Ally Spawn")
+	arty8 = Marker_FromName("arty8","Ally Spawn")
+	arty9 = Marker_FromName("arty9","Ally Spawn")
+	atkloc = Marker_FromName("atkloc","Ability")
+	bigpak = Marker_FromName("bigpak","Ally Spawn")
+	bigpak2 = Marker_FromName("bigpak2","Ally Spawn")
+	bigpak3 = Marker_FromName("bigpak3","Ally Spawn")
+	bigpak4 = Marker_FromName("bigpak4","Ally Spawn")
+	supertank1 = Marker_FromName("supertank1","Enemy Spawn")
+	supertank2 = Marker_FromName("supertank2","Enemy Spawn")
+	supertank3 = Marker_FromName("supertank3","Enemy Spawn")
+	supertank4 = Marker_FromName("supertank4","Enemy Spawn")
+
+	-- [[ Squad Groups ]]
+
+	-- [[ Entity Groups ]]
+
+end
