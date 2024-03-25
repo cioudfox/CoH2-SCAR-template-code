@@ -20,6 +20,7 @@ Located in the CoH2CustomResource.scar, you can utilize this template to help bu
 user preset custom resource values. 
 
 ## Cold Weather/Blizzard Presets
+Located in the CoH2Blizzard.scar, you can utilize this template to add a blizzard to your map. Just copy paste it.
 
 ## Attribute Editor/Lua modding
 
