@@ -1,0 +1,27 @@
+import("ScarUtil.scar")
+import("Systems/BlizzardMulitplayer.scar")
+
+-------------------------------------------------------------------------
+-- [[ ONINIT ]]
+-------------------------------------------------------------------------
+
+function OnInit()
+
+local blizzarddata =
+{
+blizzard_interval_first = 10,
+blizzard_interval_min = 10,
+blizzard_interval_max = 20,
+blizzard_exit_min = 120,
+blizzard_exit_max = 200,
+}
+MP_BlizzardInit("data:art/scenarios/presets/atmosphere/1941_moscow_blizzard.aps" ,"data:art/scenarios/presets/atmosphere/moscow_outskirts.aps", nil, blizzarddata, true)
+
+end
+Scar_AddInit(OnInit)
+
+--[[ 
+
+Standard blizzard function. If you wanna annoy your friends, make the blizzard interval and blizzard exit really small. The announcer will spam blizzard lines since they cannot be cut-off/skipped like other events in the game.
+
+]]--
