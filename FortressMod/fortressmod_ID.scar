@@ -1,0 +1,396 @@
+function OnInitID()
+
+	-- [[ Markers ]]
+	arty1 = Marker_FromName("arty1","Ally Spawn")
+	arty10 = Marker_FromName("arty10","Ally Spawn")
+	arty11 = Marker_FromName("arty11","Ally Spawn")
+	arty12 = Marker_FromName("arty12","Ally Spawn")
+	arty13 = Marker_FromName("arty13","Ally Spawn")
+	arty14 = Marker_FromName("arty14","Ally Spawn")
+	arty2 = Marker_FromName("arty2","Ally Spawn")
+	arty3 = Marker_FromName("arty3","Ally Spawn")
+	arty4 = Marker_FromName("arty4","Ally Spawn")
+	arty5 = Marker_FromName("arty5","Ally Spawn")
+	arty6 = Marker_FromName("arty6","Ally Spawn")
+	arty7 = Marker_FromName("arty7","Ally Spawn")
+	arty8 = Marker_FromName("arty8","Ally Spawn")
+	arty9 = Marker_FromName("arty9","Ally Spawn")
+	atkloc = Marker_FromName("atkloc","Ability")
+	bigpak = Marker_FromName("bigpak","Ally Spawn")
+	bigpak2 = Marker_FromName("bigpak2","Ally Spawn")
+	bigpak3 = Marker_FromName("bigpak3","Ally Spawn")
+	bigpak4 = Marker_FromName("bigpak4","Ally Spawn")
+	supertank1 = Marker_FromName("supertank1","Enemy Spawn")
+	supertank2 = Marker_FromName("supertank2","Enemy Spawn")
+	supertank3 = Marker_FromName("supertank3","Enemy Spawn")
+	supertank4 = Marker_FromName("supertank4","Enemy Spawn")
+
+	sg_super_tanks = SGroup_CreateIfNotFound("sg_super_tanks")
+	sg_super_tanks2 = SGroup_CreateIfNotFound("sg_super_tanks2")
+	sg_super_katy = SGroup_CreateIfNotFound("sg_super_katy")
+	sg_super_scout = SGroup_CreateIfNotFound("sg_super_scout")
+	sg_super_sturm = SGroup_CreateIfNotFound("sg_super_sturm")
+	sg_super_cons = SGroup_CreateIfNotFound("sg_super_cons")
+	
+	-- [[ Entity Groups ]]
+	eg_howy = EGroup_CreateIfNotFound("eg_howy")
+	eg_pak43 = EGroup_CreateIfNotFound("eg_pak43")
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty1, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty2, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty3, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty4, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty5, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty6, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty7, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty8, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty9, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty10, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty11, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty12, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty13, 1 )
+	Util_CreateEntities(nil, eg_howy, EBP.GERMAN.HOWITZER_105MM_LE_FH18_MP, arty14, 1 )
+	Util_CreateEntities(nil, eg_pak43, EBP.GERMAN.PAK43_88MM_AT_GUN_MP, bigpak, 1 )
+	Util_CreateEntities(nil, eg_pak43, EBP.GERMAN.PAK43_88MM_AT_GUN_MP, bigpak2, 1 )
+	Util_CreateEntities(nil, eg_pak43, EBP.GERMAN.PAK43_88MM_AT_GUN_MP, bigpak3, 1 )
+	Util_CreateEntities(nil, eg_pak43, EBP.GERMAN.PAK43_88MM_AT_GUN_MP, bigpak4, 1 )
+	
+	t_players = {}
+	for i=1,World_GetPlayerCount() do	
+		local player = World_GetPlayerAt(i)
+		table.insert (t_players, player)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("howitzer_105mm_barrage_ability_mp"),0.7)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("howitzer_105mm_barrage_vet3_ability_mp"),0.7)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("howitzer_105mm_victortarget_barrage_ability_mp"),0.7)
+		
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("ml_20_152mm_barrage_ability_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("ml_20_152mm_barrage_ability_vet3_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("ml_20_152mm_barrage_ability_slow_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("ml_20_152mm_barrage_ability_victortarget_mp"),0.9)
+		
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("panzerwerfer_rocket_barrage"),0.5)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("panzerwerfer_rocket_victortarget_barrage_mp"),0.5)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("kaytusha_rocket_truck_barrage_mp"),0.5)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("kaytusha_rocket_truck_barrage_victortarget_mp"),0.5)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("kaytusha_rocket_truck_precision_barrage_mp"),0.5)
+		
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("b4_203mm_barrage_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("b4_203mm_barrage_commander_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("b4_203mm_barrage_commander_precise_mp"),0.9)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("b4_203mm_barrage_commander_victortarget_mp"),0.9)
+		
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("pack_howitzer_75mm_barrage_ability_mp"),0.25)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("pack_howitzer_75mm_barrage_ability_heat_mp"),0.25)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("pack_howitzer_75mm_barrage_ability_vet3_mp"),0)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("pack_howitzer_white_phosphorous_barrage_ability_mp"),0)		
+		
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("sturmtiger_380mm_rocket_attack"),0)
+		Modify_AbilityRechargeTime(t_players[i],BP_GetAbilityBlueprint("sturmtiger_380mm_rocket_reload"),0)
+	end
+	
+	Scar_AddInit(CustomStartingResources_Init)
+	Rule_AddInterval(RES_Cast, 2,2)
+end
+
+function RES_Cast()
+	local eventspawn = World_GetRand(1,10)
+	local chatspam = World_GetRand(1,3)
+	
+	if eventspawn == 1 then
+		Modifier_RemoveAllFromSGroup(sg_super_tanks)
+		Util_CreateSquads(t_players[5], sg_super_tanks, SBP.GERMAN.TIGER_ACE_SQUAD_MP, supertank1,nil,3)
+		Util_CreateSquads(t_players[6], sg_super_tanks, SBP.GERMAN.TIGER_ACE_SQUAD_MP, supertank2,nil,3)
+		Util_CreateSquads(t_players[7], sg_super_tanks, SBP.GERMAN.TIGER_ACE_SQUAD_MP, supertank3,nil,3)
+		Util_CreateSquads(t_players[8], sg_super_tanks, SBP.GERMAN.TIGER_ACE_SQUAD_MP, supertank4,nil,3)
+		Modify_ReceivedDamage(sg_super_tanks,0.7)
+		UIWarning_Show(LOC("TIGERS TRIOS HAVE ARRIVED. The Wehraboo are Cheetahs"))
+	elseif eventspawn == 2 then
+		Modifier_RemoveAllFromSGroup(sg_super_tanks2)
+		Util_CreateSquads(t_players[5], sg_super_tanks2, SBP.GERMAN.PANTHER_SQUAD_MP, supertank1,nil,8)
+		Util_CreateSquads(t_players[6], sg_super_tanks2, SBP.GERMAN.PANTHER_SQUAD_MP, supertank2,nil,8)
+		Util_CreateSquads(t_players[7], sg_super_tanks2, SBP.GERMAN.PANTHER_SQUAD_MP, supertank3,nil,8)
+		Util_CreateSquads(t_players[8], sg_super_tanks2, SBP.GERMAN.PANTHER_SQUAD_MP, supertank4,nil,8)
+		Modify_ReceivedDamage(sg_super_tanks2,0.8)
+		UIWarning_Show(LOC("A HORDE OF ADORABLE PANTHERS HAVE ARRIVED. NICO NICO NIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"))
+	elseif eventspawn == 3 then
+		Modifier_RemoveAllFromSGroup(sg_super_tanks)
+		Util_CreateSquads(t_players[5], sg_super_tanks, SBP.SOVIET.KV_2_MP, supertank1,nil,3)
+		Util_CreateSquads(t_players[6], sg_super_tanks, SBP.SOVIET.KV_1_MP, supertank2,nil,5)
+		Util_CreateSquads(t_players[7], sg_super_tanks, SBP.SOVIET.KV_1_MP, supertank3,nil,5)
+		Util_CreateSquads(t_players[8], sg_super_tanks, SBP.SOVIET.KV_8_MP, supertank4,nil,3)
+		Modify_ReceivedDamage(sg_super_tanks,0.8)
+		UIWarning_Show(LOC("KV1, KV2, Red KV, Blue KV... Wait..."))
+	elseif eventspawn == 4 then 
+		Util_CreateSquads(t_players[5], sg_super_katy, SBP.SOVIET.KATYUSHA_BM_13N_SQUAD_MP, supertank1,nil,3)
+		Util_CreateSquads(t_players[6], sg_super_katy, SBP.SOVIET.KATYUSHA_BM_13N_SQUAD_MP, supertank2,nil,3)
+		Util_CreateSquads(t_players[7], sg_super_katy, SBP.SOVIET.KATYUSHA_BM_13N_SQUAD_MP, supertank3,nil,3)
+		Util_CreateSquads(t_players[8], sg_super_katy, SBP.SOVIET.KATYUSHA_BM_13N_SQUAD_MP, supertank4,nil,3)
+		Modify_UnitSpeed(sg_super_katy,1.5)
+		Modify_ReceivedAccuracy(sg_super_katy,0.25)
+		UIWarning_Show(LOC("Ultra Rapid Fire KATYUSHAS... WHAT COULD GO WRONG"))
+	elseif eventspawn == 5 then
+		Modifier_RemoveAllFromSGroup(sg_super_sturm)
+		Util_CreateSquads(t_players[5], sg_super_sturm, SBP.WEST_GERMAN.STURMTIGER_SQUAD_MP, supertank1,nil,1)
+		Util_CreateSquads(t_players[6], sg_super_sturm, SBP.WEST_GERMAN.STURMTIGER_SQUAD_MP, supertank2,nil,1)
+		Util_CreateSquads(t_players[7], sg_super_sturm, SBP.WEST_GERMAN.STURMTIGER_SQUAD_MP, supertank3,nil,1)
+		Util_CreateSquads(t_players[8], sg_super_sturm, SBP.WEST_GERMAN.STURMTIGER_SQUAD_MP, supertank4,nil,1)
+		Modify_WeaponRange(sg_super_sturm,"hardpoint_02",4)
+		Modify_WeaponCooldown(sg_super_sturm,"hardpoint_02",0)	
+		Modify_SightRadius(sg_super_sturm,2)
+		UIWarning_Show(LOC("Uber range Sturmtigers!"))
+	elseif eventspawn == 6 then
+		Modifier_RemoveAllFromSGroup(sg_super_cons)
+		Util_CreateSquads(t_players[5], sg_super_cons, SBP.SOVIET.CONSCRIPT_SQUAD_MP, supertank1,nil,10)
+		Util_CreateSquads(t_players[6], sg_super_cons, SBP.SOVIET.CONSCRIPT_SQUAD_MP, supertank2,nil,10)
+		Util_CreateSquads(t_players[7], sg_super_cons, SBP.SOVIET.CONSCRIPT_SQUAD_MP, supertank3,nil,10)
+		Util_CreateSquads(t_players[8], sg_super_cons, SBP.SOVIET.CONSCRIPT_SQUAD_MP, supertank4,nil,10)
+		Modify_ReceivedDamage(sg_super_cons,0.3)
+		Modify_ReceivedSuppression(sg_super_cons,0)
+		Modify_WeaponDamage(sg_super_cons,"hardpoint_01",2)
+		Cmd_Upgrade(sg_super_cons, BP_GetUpgradeBlueprint("ppsh-41_sub_machine_gun_upgrade_mp"), 2, true)
+		UIWarning_Show(LOC("HORDE OF ANGRY CONSCRIPTS"))
+	elseif eventspawn == 7 then
+		Modifier_RemoveAllFromSGroup(sg_super_tanks)
+		Util_CreateSquads(t_players[5], sg_super_tanks, SBP.WEST_GERMAN.GOLIATH_MP,supertank1,nil,5)
+		Util_CreateSquads(t_players[6], sg_super_tanks, SBP.WEST_GERMAN.GOLIATH_MP,supertank2,nil,5)
+		Util_CreateSquads(t_players[7], sg_super_tanks, SBP.WEST_GERMAN.GOLIATH_MP,supertank3,nil,5)
+		Util_CreateSquads(t_players[8], sg_super_tanks, SBP.WEST_GERMAN.GOLIATH_MP,supertank4,nil,5)
+		Modify_UnitSpeed(sg_super_tanks, 5)
+		Modify_Vulnerability(sg_super_tanks,0.25)
+		UIWarning_Show(LOC("KAMIKAZE GOLIATHS"))
+	elseif eventspawn == 8 then
+		Modifier_RemoveAllFromSGroup(sg_super_sturm)
+		Util_CreateSquads(t_players[5], sg_super_sturm, SBP.GERMAN.ELEFANT_TANK_DESTROYER_SQUAD_MP,supertank1,nil,1)
+		Util_CreateSquads(t_players[6], sg_super_sturm, SBP.GERMAN.ELEFANT_TANK_DESTROYER_SQUAD_MP,supertank2,nil,1)
+		Util_CreateSquads(t_players[7], sg_super_sturm, SBP.GERMAN.ELEFANT_TANK_DESTROYER_SQUAD_MP,supertank3,nil,1)
+		Util_CreateSquads(t_players[8], sg_super_sturm, SBP.GERMAN.ELEFANT_TANK_DESTROYER_SQUAD_MP,supertank4,nil,1)
+		Modify_WeaponRange(sg_super_sturm,"hardpoint_01",9)
+		Modify_WeaponDamage(sg_super_sturm,"hardpoint_01",16)
+		Modify_WeaponCooldown(sg_super_sturm,"hardpoint_01",0)	
+		Modify_SightRadius(sg_super_sturm,9)
+		Modify_UnitSpeed(sg_super_sturm, 3)
+		UIWarning_Show(LOC("SUPER RANGE ELEFANTS"))
+	elseif eventspawn == 9 then
+		Modifier_RemoveAllFromSGroup(sg_super_cons)
+		Util_CreateSquads(t_players[5], sg_super_cons, SBP.SOVIET.PARTISANS_PANZERSCHRECK_MP, supertank1,nil,10)
+		Util_CreateSquads(t_players[6], sg_super_cons, SBP.SOVIET.PARTISANS_PANZERSCHRECK_MP, supertank2,nil,10)
+		Util_CreateSquads(t_players[7], sg_super_cons, SBP.SOVIET.PARTISANS_PANZERSCHRECK_MP, supertank3,nil,10)
+		Util_CreateSquads(t_players[8], sg_super_cons, SBP.SOVIET.PARTISANS_PANZERSCHRECK_MP, supertank4,nil,10)
+		Modify_Vulnerability(sg_super_cons,0.4)
+		Modify_ReceivedSuppression(sg_super_cons,0)
+		Modify_WeaponDamage(sg_super_cons,"hardpoint_01",2)
+		Cmd_Upgrade(sg_super_cons, BP_GetUpgradeBlueprint("ppsh-41_sub_machine_gun_upgrade_mp"), 2, true)
+		UIWarning_Show(LOC("HORDE OF ANGRY PARTISANS"))
+	else
+		Modifier_RemoveAllFromSGroup(sg_super_scout)
+		Util_CreateSquads(t_players[5], sg_super_scout, SBP.GERMAN.SCOUTCAR_SDKFZ222, supertank1,nil,2)
+		Util_CreateSquads(t_players[6], sg_super_scout, SBP.GERMAN.SCOUTCAR_SDKFZ222, supertank2,nil,2)
+		Util_CreateSquads(t_players[7], sg_super_scout, SBP.GERMAN.SCOUTCAR_SDKFZ222, supertank3,nil,2)
+		Util_CreateSquads(t_players[8], sg_super_scout, SBP.GERMAN.SCOUTCAR_SDKFZ222, supertank4,nil,2)
+		Modify_SightRadius(sg_super_scout,2)
+		Modify_ReceivedDamage(sg_super_scout,0.5)
+		Modify_WeaponCooldown(sg_super_scout,"hardpoint_01",0)	
+		Modify_WeaponDamage(sg_super_scout,"hardpoint_01",4)
+		Modify_WeaponRange(sg_super_scout,"hardpoint_01",2)
+		UIWarning_Show("222s: 2^2 Times the Health, 2^2 Times the Range, and 2^2 Times the Damage")
+	end
+	Rule_ChangeInterval(RES_Cast,240,240)
+end
+	
+function CustomStartingResources_Init()
+	
+	local ResourceSets = {
+		standard = {
+			--german:
+			[0] = {
+				manpower = 490,
+				fuel = 20,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--soviet:
+			[1] = {
+				manpower = 490,
+				fuel = 50,
+				munition = 0,
+				action = 0,
+				command = 1,
+
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 240,
+				fuel = 40,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--us forces:
+			[3] = {
+				manpower = 400,
+				fuel = 15,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			--british forces:
+			[4] = {
+				manpower = 400,
+				fuel = 15,
+				munition = 0,
+				action = 0,
+				command = 1,
+			},
+			income_modifier = {
+				{type = RT_Manpower, value = 1, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Munition, value = 1, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Fuel, value = 1, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+			},
+		},
+		highResources = {
+			--german:
+			[0] = {
+				manpower = 1390,
+				fuel = 50,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--soviet:
+			[1] = {
+				manpower = 1390,
+				fuel = 80,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 1140,
+				fuel = 70,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--us forces:
+			[3] = {
+				manpower = 1300,
+				fuel = 45,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			--british forces:
+			[4] = {
+				manpower = 1300,
+				fuel = 45,
+				munition = 50,
+				action = 0,
+				command = 2,
+			},
+			income_modifier = {
+				{type = RT_Manpower, value = 1, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Munition, value = 1, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Fuel, value = 1, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+				{type = RT_Action, value = 1, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+			},
+		},
+		customSet_01 = {
+			--german:
+			[0] = {
+				manpower = 3000,
+				fuel = 500,
+				munition = 400,
+				action = 0,
+				command = 12,
+			},
+			--soviet:
+			[1] = {
+				manpower = 3000,
+				fuel = 400,
+				munition = 400,
+				action = 0,
+				command = 12,
+			},
+			--Obercommando west:
+			[2] = {
+				manpower = 3000,
+				fuel = 600,
+				munition = 600,
+				action = 0,
+				command = 12,
+			},
+			--us forces:
+			[3] = {
+				manpower = 3500,
+				fuel = 600,
+				munition = 600,
+				action = 0,
+				command = 12,
+			},
+			--british forces:
+			[4] = {
+				manpower = 4000,
+				fuel = 800,
+				munition = 800,
+				action = 0,
+				command = 12,
+			},
+		income_modifier = {
+			{type = RT_Manpower, value = 6, math_type = MUT_Multiplication}, -- manpower. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Munition, value = 6, math_type = MUT_Multiplication}, -- munition. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Fuel, value = 6, math_type = MUT_Multiplication}, -- fuel. math_type = MUT_Multiplication OR MUT_Addition
+			{type = RT_Action, value = 2, math_type = MUT_Multiplication}, -- action/xp. math_type = MUT_Multiplication OR MUT_Addition
+		},
+		},
+		
+	}
+	--This will set the resource set to use in-game
+	local g_ResourceSet = ResourceSets.customSet_01
+	
+	local Player_ApplyResourceSet = function(player, resourceSet)
+		Player_SetResource(player, RT_Manpower, resourceSet.manpower)
+		Player_SetResource(player, RT_Fuel, resourceSet.fuel)
+		Player_SetResource(player, RT_Munition, resourceSet.munition)
+		Player_SetResource(player, RT_Action, resourceSet.action)
+		Player_SetResource(player, RT_Command, resourceSet.command)	
+	end
+	--Population cap override value
+	g_popCapOverride = 1000
+	
+	for i = 1, World_GetPlayerCount() do
+		local player = World_GetPlayerAt(i)
+		local resource_set = g_ResourceSet[Player_GetRaceIndex(player)]
+		Modify_PlayerProductionRate(player, 4.00)
+		Player_ApplyResourceSet(player, resource_set)
+		Player_SetPopCapOverride(player, g_popCapOverride)
+		for key, resource in ipairs(g_ResourceSet.income_modifier) do
+			local _value = resource.value
+			if resource.math_type == MUT_Addition then
+				_value = _value / (60 * 8)
+			end
+			Modify_PlayerResourceRate(player, resource.type, _value, resource.math_type)
+		end
+	end
+end
+
+function Player_GetRaceIndex(player)
+	local racename = Player_GetRaceName(player)
+	if racename == "german" then
+		return 0
+	elseif racename == "soviet" then
+		return 1
+	elseif racename == "west_german" then
+		return 2
+	elseif racename == "aef" then
+		return 3
+	elseif racename == "british" then
+		return 4
+	else
+		return 0
+	end
+end
+
+
+
